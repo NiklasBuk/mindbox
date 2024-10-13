@@ -18,6 +18,8 @@ const TodoInput: FC<TodoInput> = ({ setTodos }) => {
 				isDone: false,
 				isImportant: false
 			}
+			// TODO fix setTodos type validations later
+			// @ts-ignore
 			setTodos(prev => [newTodo, ...prev])
 			setNewTodoTitle('')
 		}
