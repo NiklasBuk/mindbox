@@ -39,7 +39,7 @@ const TodoInput: FC<TodoInput> = ({ setTodos }) => {
 						: 'todo-input_btn'
 				}
 				onClick={
-					newTodoTitle.trim().length >= 3 ? () => addTodo(newTodoTitle) : null
+					newTodoTitle.trim().length >= 3 ? () => addTodo(newTodoTitle) : () => alert('Todo title should be 3 or more letters length')
 				}
 			>
 				&gt;
